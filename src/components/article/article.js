@@ -134,14 +134,14 @@ function articleMaker(Array) {
   articleButton.classList.add("expandButton");
 
   articleButton.addEventListener("click", () => {
-    articleContainer.classList.toggle("article-open");
+    articleContainer.classList.toggle(".article-open");
   });
   return articleContainer;
 }
 
-// data.forEach((Array) => {
-//   document.querySelector("div.article").appendChild(articleMaker(Array));
-// });
+data.forEach((article) => {
+  document.querySelector("div.articles").appendChild(articleMaker(article));
+});
 
 /*
   Step 1: Write a component called 'articleMaker' to create an article.
